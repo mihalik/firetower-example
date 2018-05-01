@@ -39,17 +39,17 @@ export const routes = {
     hidePageChrome: true,
     hideFromMenu: true,
   },
+  noteDetail: {
+    path: "/notes/:noteId",
+    component: NoteDetails,
+    hideFromMenu: true,
+    requiresAuth: true,
+  },
   notes: {
     path: "/notes",
     display: "Notes",
     icon: AssignmentIcon,
     component: Notes,
-    requiresAuth: true,
-  },
-  noteDetail: {
-    path: "/notes/:noteId",
-    component: NoteDetails,
-    hideFromMenu: true,
     requiresAuth: true,
   },
   admin: {
